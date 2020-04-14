@@ -56,3 +56,30 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+/*美化文章中超链接，添加变色效果和椭圆边框 
+      <div>
+        <a href="/posts/41119.html" id=dt-a><p class=dt-p><span id=dt-span>Windows软件推荐</span></p></a><br>
+        </div>*/
+.dt-p {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 45px;
+    width: auto;
+    height: auto;
+    padding: 9px 45px 9px 45px;
+    text-align: center;
+    display: inline; /后面无换行，宽度随内容变化/
+    }
+.dt-p:hover {
+        background-color: black;
+    }
+
+    #dt-a {
+        text-decoration:none !important; /*去掉超链接下划线*/
+
+    }
+
+    #dt-span {
+        color: white;
+        mix-blend-mode: difference;  /*颜色反相*/
+    }
